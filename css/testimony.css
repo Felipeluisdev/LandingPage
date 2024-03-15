@@ -1,0 +1,83 @@
+.testimonys {
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title-testimony {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 2rem;
+    color: gray;
+}
+
+.testimony {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 50px 0;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.testimony .card-image {
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimony .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.slide p {
+    text-align: center;
+    padding: 0 100px;
+    font-size: 14px;
+    font-weight: 400;
+    color: gray;
+}
+
+.slide .quote-icon {
+    font-size: 30px;
+    color: palevioletred;
+}
+
+.details .name {
+    font-size: 16px;
+    font-weight: 600;
+    color: gray;
+}
+
+.nav-btn {
+    margin-left: 22px;
+}
+
+.nav-btn::after,
+.nav-btn::before {
+    color: transparent;
+}
+
+.nav-btn i {
+    font-size: 40px;
+    color: palevioletred;
+}
+
+.nav-btn i:hover {
+    color: rgba(255, 192, 203, 0.8);
+}
+
+.swiper-pagination-bullet-active.swiper-pagination-bullet-active {
+    background-color: palevioletred;
+}
+   
+
+

@@ -2,22 +2,37 @@
 <html lang="pt-br">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/history.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/location.css">
+    <link rel="stylesheet" href="css/testimony.css">
+    <link rel="stylesheet" href="css/footer.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Landing page</title>
-    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="js/menu-mobile.js" defer></script>
+
+    <title>ROBERTA LUANA BEAUTY</title>
 
 </head>
 
@@ -25,362 +40,69 @@
 
     <header>
 
-        <nav id="navbar">
+        <nav id="nav-bar">
 
-            <i class="fa-solid fa-fish" id="nav_logo"> FOOD</i>
+            <a href="index.html">
+                <img src="images/logo-black.png" alt="logo" id="logo">
+            </a>
 
-            <ul id="nav_list">
+            <div class="menu-mobile" id="menu-mobile">
 
-                <li class="nav-item active">
-                    <a href="#home">Inicio</a>
-                </li>
+                <div class="button-close">
 
-                <li class="nav-item">
-                    <a href="#menu">Cardápio</a>
-                </li>
+                    <i class="fa-solid fa-xmark"></i>
 
-                <li class="nav-item">
-                    <a href="#notes">Avaliações</a>
-                </li>
+                </div>
 
-            </ul>
+                <ul class="nav-list-mobile">
 
-            <button class="button_default">
-                Peça aqui
-            </button>
+                    <li>
+                        <a href="#">QUEM SOU EU</a>
+                    </li>
 
-            <button id="mobile_button">
+                    <li>
+                        <a href="#">PROCEDIMENTOS</a>
+                    </li>
+
+                    <li>
+                        <a href="#">CLINICA</a>
+                    </li>
+
+                    <li>
+                        <a href="#">CONTATO</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="button-open" id="button-menu">
+
                 <i class="fa-solid fa-bars"></i>
-            </button>
 
-        </nav>
+            </div>
 
-        <div id="mobile_menu">
+            <ul class="nav-list">
 
-            <ul id="mobile_nav_list">
-
-                <li class="nav-item">
-                    <a href="#home">Inicio</a>
+                <li>
+                    <a href="#">QUEM SOU EU</a>
                 </li>
 
-                <li class="nav-item">
-                    <a href="#menu">Cardápio</a>
+                <li>
+                    <a href="#">PROCEDIMENTOS</a>
                 </li>
 
-                <li class="nav-item">
-                    <a href="#notes">Avaliações</a>
+                <li>
+                    <a href="#">CLINICA</a>
+                </li>
+
+                <li>
+                    <a href="#">CONTATO</a>
                 </li>
 
             </ul>
 
-            <button class="button_default">
-                Peça aqui
-            </button>
-
-        </div>
-
-    </header>
-
-    <main id="content">
-
-        <section id="home">
-
-            <div class="shape"></div>
-
-            <div id="cta">
-
-                <h1 class="title">
-                    O sabor vai até
-                    <span>você ...</span>
-                </h1>
-
-                <p class="description">
-
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam sed facilis ab neque, eaque
-                    accusamus repellat voluptas esse iure, maiores error voluptates laborum nesciunt dolor nam qui
-                    asperiores, alias odit.
-
-                </p>
-
-                <div id="cta_buttons">
-
-                    <a href="#" class="button_default">
-                        Ver cardápio
-                    </a>
-
-                    <a href="tel: +55555555555" id="button_phone">
-
-                        <button class="button_default"><i class="fa-solid fa-phone"></i>
-                        </button>
-                        (11) 99999-9999
-                    </a>
-
-                </div>
-
-                <div class="social-media-button">
-
-                    <a href="#">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-            <div id="banner">
-
-                <img src="src/assets/hero.png" alt="">
-
-            </div>
-
-        </section>
-
-        <section id="menu">
-
-            <h2 class="section-title">Cardápio</h2>
-            <h3 class="section-subtitle">Nossos pratos especiais</h3>
-
-            <div id="dishes">
-
-                <div class="dish">
-
-                    <div class="dish-heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-
-                    <img src="src/assets/dish.png" class="dish-image" alt="">
-
-                    <h3 class="dish-title">
-                        Lorem Ipisum
-                    </h3>
-
-                    <span class="dish-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </span>
-
-                    <div class="dish-rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
-                    </div>
-
-                    <div class="dish-price">
-                        <h4>R$19,90</h4>
-                        <button class="button_default">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </button>
-                    </div>
-
-                </div>
-
-                <div class="dish">
-
-                    <div class="dish-heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-
-                    <img src="src/assets/dish2.png" class="dish-image" alt="">
-
-                    <h3 class="dish-title">
-                        Lorem Ipisum
-                    </h3>
-
-                    <span class="dish-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </span>
-
-                    <div class="dish-rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
-                    </div>
-
-                    <div class="dish-price">
-                        <h4>R$19,90</h4>
-                        <button class="button_default">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </button>
-                    </div>
-
-                </div>
-
-                <div class="dish">
-
-                    <div class="dish-heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-
-                    <img src="src/assets/dish3.png" class="dish-image" alt="">
-
-                    <h3 class="dish-title">
-                        Lorem Ipisum
-                    </h3>
-
-                    <span class="dish-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </span>
-
-                    <div class="dish-rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
-                    </div>
-
-                    <div class="dish-price">
-                        <h4>R$19,90</h4>
-                        <button class="button_default">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </button>
-                    </div>
-
-                </div>
-
-                <div class="dish">
-
-                    <div class="dish-heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-
-                    <img src="src/assets/dish4.png" class="dish-image" alt="">
-
-                    <h3 class="dish-title">
-                        Lorem Ipisum
-                    </h3>
-
-                    <span class="dish-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </span>
-
-                    <div class="dish-rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
-                    </div>
-
-                    <div class="dish-price">
-                        <h4>R$19,90</h4>
-                        <button class="button_default">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </button>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section id="testimonials">
-
-            <img src="src/assets/chef.png" id="testimonials-chef" alt="">
-
-            <div id="testimonials-content">
-
-                <h2 class="section-title">
-                    Depoimentos
-                </h2>
-
-                <h3 class="section-subtitle">
-                    O que os clientes falam sobre nós:
-                </h3>
-
-                <div id="feedbacks">
-
-                    <div class="feedback">
-
-                        <img src="src/assets/avatar.png" class="feedback-avatar" alt="">
-
-                        <div class="feedback-content">
-
-                            <p>
-                                Maria José
-                                <span>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                            </p>
-
-                            <p>
-                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quod repellat suscipit
-                                provident culpa nisi amet unde, aliquid dolore architecto necessitatibus blanditiis!""
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="feedback">
-
-                        <img src="src/assets/avatar.png" class="feedback-avatar" alt="">
-
-                        <div class="feedback-content">
-
-                            <p>
-                                Maria José
-                                <span>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                            </p>
-
-                            <p>
-                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quod repellat suscipit
-                                provident culpa nisi amet unde, aliquid dolore architecto necessitatibus blanditiis!""
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <button class="button_default">
-                    Ver mais avaliações
-                </button>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <footer>
-
-        <img src="src/assets/wave.svg" alt="">
-
-        <div id="footer-itens">
-
-            <span id="copyright">
-                &copy 2024 Felipe Luis
-            </span>
-
-            <div class="social-media-button">
+            <div class="social-media">
 
                 <a href="#">
                     <i class="fa-brands fa-whatsapp"></i>
@@ -396,11 +118,296 @@
 
             </div>
 
+        </nav>
+
+        <div class="text-itens">
+
+            <span>ROBERTA LUANA BEAUTY</span>
+
+            <h1>
+                B E L E Z A
+                <br>
+                C O M
+                <br>
+                N A T U R A L I D A D E
+            </h1>
+
+            <button class="button-add">SAIBA MAIS</button>
+
         </div>
 
-    </footer>
+    </header>
 
-    <script src="src/javascripts/scripts.js"></script>
+    <section id="history">
+
+        <div class="img-my">
+
+            <img src="images/pessoal.png" alt="">
+
+        </div>
+
+        <div class="history-content">
+
+            <h2>QUEM SOU EU</h2>
+
+            <h3>ROBERTA LUANA BEAUTY</h3>
+
+            <p>
+
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aperiam explicabo iure fugit rerum
+                illum corporis nesciunt fuga delectus minima voluptas eveniet, eius nam ad deserunt ex unde libero
+                assumenda, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aperiam explicabo iure fugit
+                rerum
+                illum corporis nesciunt fuga delectus minima voluptas eveniet, eius nam ad deserunt ex unde libero
+                assumenda.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="services">
+
+        <h1 class="section-title">PROCEDIMENTOS</h1>
+
+        <div class="swiper services-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+
+                    <div class="image">
+
+                        <img class="img-services" src="images/cilios.png" alt="">
+
+                        <div class="share">
+                            <a href="#">CÍLIOS</a>
+                        </div>
+
+                        <button class="button-add-services">
+                            <a href="#">SAIBA MAIS</a>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide slide">
+
+                    <div class="image">
+
+                        <img class="img-services" src="images/sobrancelhas.png" alt="">
+
+                        <div class="share">
+                            <a href="#">SOBRANCELHAS</a>
+                        </div>
+
+                        <button class="button-add-services">
+                            <a href="#">SAIBA MAIS</a>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide slide">
+
+                    <div class="image">
+
+                        <img class="img-services" src="images/labios.png" alt="">
+
+                        <div class="share">
+                            <a href="#">LÁBIOS</a>
+                        </div>
+
+                        <button class="button-add-services">
+                            <a href="#">SAIBA MAIS</a>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+    </section>
+
+    <section id="location">
+
+        <div class="we-are-content-location">
+
+            <h2>CONHEÇA NOSSO ESPAÇO</h2>
+
+            <h3>MÃOS DE FADAS</h3>
+
+            <p>
+
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aperiam explicabo iure fugit rerum
+                illum corporis nesciunt fuga delectus minima voluptas eveniet, eius nam ad deserunt ex unde libero
+                assumenda Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aperiam explicabo iure fugit
+                rerum
+                illum corporis nesciunt fuga delectus minima voluptas eveniet, Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Id aperiam explicabo iure fugit rerum
+                illum corporis nesciunt fuga delectus minima voluptas eveniet.
+
+            </p>
+
+
+            <button class="button-add-maps">
+                <a href="#">ME ENCONTRE AQUI</a>
+            </button>
+
+        </div>
+
+        <div class="we-are-image-location">
+
+            <img src="images/location-1.png">
+
+        </div>
+
+    </section>
+
+    <section class="testimonys">
+
+        <div class="testimony mySwiper">
+
+            <div class="section-title-testimony">FEEDBACKS</div>
+
+            <div class="testimony-content swiper-wrapper">
+
+                <div class="slide swiper-slide">
+
+                    <img src="images/card-image.png" class="card-image">
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos unde cumque nisi rem, quo itaque,
+                        animi excepturi iusto debitis corrupti aspernatur alias facilis possimus asperiores dicta ipsam!
+                        Veritatis, quis qui.
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+
+                        <span class="name">
+                            Maria José.
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="slide swiper-slide">
+
+                    <img src="images/card-image.png" class="card-image">
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos unde cumque nisi rem, quo itaque,
+                        animi excepturi iusto debitis corrupti aspernatur alias facilis possimus asperiores dicta ipsam!
+                        Veritatis, quis qui.
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+
+                        <span class="name">
+                            Maria José.
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="slide swiper-slide">
+
+                    <img src="images/card-image.png" class="card-image">
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos unde cumque nisi rem, quo itaque,
+                        animi excepturi iusto debitis corrupti aspernatur alias facilis possimus asperiores dicta ipsam!
+                        Veritatis, quis qui.
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+
+                        <span class="name">
+                            Maria José.
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="slide swiper-slide">
+
+                    <img src="images/card-image.png" class="card-image">
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos unde cumque nisi rem, quo itaque,
+                        animi excepturi iusto debitis corrupti aspernatur alias facilis possimus asperiores dicta ipsam!
+                        Veritatis, quis qui.
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+
+                        <span class="name">
+                            Maria José.
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="slide swiper-slide">
+
+                    <img src="images/card-image.png" class="card-image">
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos unde cumque nisi rem, quo itaque,
+                        animi excepturi iusto debitis corrupti aspernatur alias facilis possimus asperiores dicta ipsam!
+                        Veritatis, quis qui.
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+
+                        <span class="name">
+                            Maria José.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next nav-btn">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+            </div>
+
+            <div class="swiper-button-prev nav-btn">
+                <i class="fa-solid fa-circle-chevron-left"></i>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper-services.js"></script>
+    <script src="js/swiper-testimony.js"></script>
 
 </body>
 

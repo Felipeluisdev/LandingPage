@@ -1,0 +1,90 @@
+* {
+    outline: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+.img-services {
+    user-select: none;
+    height: 100%;
+}
+
+.services {
+    padding: 3rem 15%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    color: gray;
+}
+
+.services .slide {
+    text-align: center;
+}
+
+.share a {
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.share a:hover {
+    color: palevioletred;
+    letter-spacing: 3px;
+}
+
+.button-add-services {
+    border: none;
+    background-color: #2d2a30;
+    padding: 8px 50px;
+    width: 90%;
+    font-size: 20px;
+    font-weight: 400;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.button-add-services:hover {
+    background-color: palevioletred;
+}
+
+.button-add-services a {
+    color: white;
+}
+
+.services-slider .swiper-button-next {
+    color: gray;
+}
+
+.services-slider .swiper-button-prev {
+    color: gray;
+}
+
+@media screen and (max-width: 1020px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    .services {
+        padding: 1rem 5%;
+    }
+    .services-slider .swiper-button-next {
+        display: block;
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        color: palevioletred;
+    }
+
+    .services-slider .swiper-button-prev {
+        display: block;
+    }
+    .img-services {
+        width: 270px;
+        height: 270px;
+    }
+}
